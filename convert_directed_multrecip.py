@@ -16,8 +16,7 @@ for i in range(1,len(edges_to_rm)):
 for i in range(len(recips)):
     dir = "new_nets_recip{}".format(int(100*recips[i]))
     list_removing = []
-    #target_edges = round(len(l)/(1-(float(r)/2)))
-    #edges_to_rm = int(round((1-r) * target_edges))
+
     for j in range(edges_to_rm[i]):
         to_remove = ran.randint(0,len(l)-1)
         ed = l[to_remove]
